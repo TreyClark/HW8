@@ -39,12 +39,12 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/DeviceDetail.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="708">
-                    <caret line="63" column="45" lean-forward="true" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+                  <state relative-caret-position="429">
+                    <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#1967#1968#0" expanded="true" />
-                      <element signature="e#1985#1986#0" expanded="true" />
+                      <element signature="e#1376#1592#0" expanded="true" />
+                      <element signature="e#1591#1592#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -74,11 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+            <state relative-caret-position="197">
+              <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
               <folding>
                 <element signature="e#1065#1250#0" expanded="true" />
                 <element signature="e#1249#1250#0" expanded="true" />
@@ -87,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/Device.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
+            <state relative-caret-position="-83">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
@@ -126,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="794" />
-    <option name="width" value="1133" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -389,7 +389,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="794" y="0" width="1133" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
@@ -399,18 +399,18 @@
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Resources Explorer" order="6" weight="0.32932165" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.26747438" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.31400436" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.7324106" weight="0.32932165" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.032822758" />
       <window_info anchor="bottom" id="Debug" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49781182" weight="0.32932165" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50319827" side_tool="true" weight="0.25893825" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.4968017" weight="0.25893825" />
-      <window_info anchor="bottom" id="Find" order="7" visible="true" weight="0.33260393" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.4971165" weight="0.3261105" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.4968017" weight="0.25820568" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.33260393" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32932165" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.4971165" weight="0.32603937" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -515,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/Device.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/data/DataViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
@@ -539,25 +532,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/DeviceDetail.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="63" column="45" lean-forward="true" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        <state relative-caret-position="197">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#1065#1250#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/Device.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        <state relative-caret-position="-83">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/ualr/recyclerviewasignment/model/DeviceDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
           <folding>
-            <element signature="e#1065#1250#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1376#1592#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
           </folding>
         </state>
       </provider>
