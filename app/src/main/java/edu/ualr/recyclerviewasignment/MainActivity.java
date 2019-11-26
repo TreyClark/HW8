@@ -10,6 +10,7 @@ import android.os.Bundle;
 import edu.ualr.recyclerviewasignment.adapter.DeviceListAdapter;
 import edu.ualr.recyclerviewasignment.data.DataGenerator;
 import edu.ualr.recyclerviewasignment.data.DataViewModel;
+import edu.ualr.recyclerviewasignment.model.Device;
 import edu.ualr.recyclerviewasignment.model.DeviceDetail;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,15 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void initRecyclerView(){
         mAdapter = new DeviceListAdapter(this);
+        mDataViewModel = new DataViewModel();
         mAdapter.setOnDetailOpenListener(new DeviceListAdapter.OnDetailOpenListener() {
             @Override
-            public void onOpen() {
-                createDeviceDetail();
+            public void onOpen(int position) {
+                createDeviceDetail(position);
             }
         });
         mRecyclerView = findViewById(R.id.devices_recycler_view);
         mRecyclerView.setAdapter(mAdapter);
-        mDataViewModel = new DataViewModel();
         mDataViewModel.mDataSetChangeListener= new DataViewModel.dataSetChangeListener() {
             @Override
             public void OnNotifyDataSetChange() {
@@ -58,19 +59,28 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void createDeviceDetail(){
-        final DeviceDetail device = new DeviceDetail();
-        device.mSaveButtonListener = new DeviceDetail.OnSaveClickedListener() {
+    public void createDeviceDetail(int position){
+
+        Device device = new Device(mAdapter.getDevice(position));
+
+        final DeviceDetail deviceDetail = new DeviceDetail(device);
+
+        deviceDetail.mSaveButtonListener = new DeviceDetail.OnSaveClickedListener() {
             @Override
             public void onClick() {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                ft.remove(device);
+                ft.remove(deviceDetail);
                 ft.commit();
+            }
+
+            @Override
+            public void returnData(){
+
             }
         };
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_placeholder, device);
+        ft.replace(R.id.fragment_placeholder, deviceDetail);
 // or ft.add(R.id.your_placeholder, new FooFragment());
         ft.commit();
 

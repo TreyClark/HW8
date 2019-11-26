@@ -27,10 +27,10 @@ public class DeviceDetail extends Fragment {
     private TextView deviceStatus;
     private Spinner spinner;
 
-
     public OnSaveClickedListener mSaveButtonListener;
     public interface OnSaveClickedListener {
         public void onClick();
+        public void returnData();
     }
 
 
@@ -47,6 +47,7 @@ public class DeviceDetail extends Fragment {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mSaveButtonListener.returnData();
                 mSaveButtonListener.onClick();
             }
         });
@@ -58,5 +59,11 @@ public class DeviceDetail extends Fragment {
         spinner = view.findViewById(R.id.device_type_spinner);
 
     }
+
+    public DeviceDetail(Device device){
+        System.out.println("HIT");
+        //deviceName.setText(device.getName());
+    }
+
 
 }

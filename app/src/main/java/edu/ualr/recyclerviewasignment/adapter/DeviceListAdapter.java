@@ -36,8 +36,8 @@ public class DeviceListAdapter extends RecyclerView.Adapter {
     public DataViewModel dataViewModel;
 
     private DeviceListAdapter.OnDetailOpenListener mOnDetailOpenListener;
-    public interface OnDetailOpenListener {
-        public void onOpen();
+    public interface OnDetailOpenListener  {
+        public void onOpen(int position);
     }
 
     public void setOnDetailOpenListener (OnDetailOpenListener pListener) {
@@ -81,6 +81,7 @@ public class DeviceListAdapter extends RecyclerView.Adapter {
         }
     }
 
+
     public int getItemCount() {
         return dataViewModel.getItemsSize();
     }
@@ -88,6 +89,10 @@ public class DeviceListAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemViewType(int position) {
         return dataViewModel.getDeviceListItem(position).isSection() ? SECTION_VIEW : DEVICE_VIEW;
+    }
+
+    public Device getDevice( int position){
+        return (Device) dataViewModel.getDeviceListItem(position);
     }
 
     private class SectionViewHolder extends RecyclerView.ViewHolder {
@@ -119,7 +124,7 @@ public class DeviceListAdapter extends RecyclerView.Adapter {
             parent.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mOnDetailOpenListener.onOpen();
+                    mOnDetailOpenListener.onOpen(getAdapterPosition());
                 }
             });
         }
@@ -132,6 +137,13 @@ public class DeviceListAdapter extends RecyclerView.Adapter {
 
             toggleConnection();
         }
+
+        public void getItemInformation(){
+            if(!dataViewModel.getDeviceListItem(getAdapterPosition()).isSection()) {
+               Device device = (Device) dataViewModel.getDeviceListItem(getAdapterPosition());
+            }
+        }
+
 
 
         private void toggleConnection() {
