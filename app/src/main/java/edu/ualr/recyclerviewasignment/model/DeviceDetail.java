@@ -25,6 +25,7 @@ public class DeviceDetail extends Fragment {
     private ImageView statusMark;
     private TextView deviceName;
     private TextView deviceStatus;
+    private TextView deviceConnectionTime;
     private Spinner spinner;
 
     private Device parentDevice;
@@ -59,7 +60,24 @@ public class DeviceDetail extends Fragment {
         deviceName = view.findViewById(R.id.detail_device_name_edittext);
         deviceStatus = view.findViewById(R.id.detail_device_status);
         spinner = view.findViewById(R.id.device_type_spinner);
+        deviceConnectionTime= view.findViewById(R.id.last_time_connection_textview);
+
         deviceName.setText(parentDevice.getName());
+        deviceConnectionTime.setText(parentDevice.getLastConnection().toString());
+
+        if(parentDevice.getDeviceStatus() == Device.DeviceStatus.Connected){
+            deviceStatus.setText("Connected");
+            statusMark.setImageResource(R.drawable.status_mark_connected);
+        }
+        if(parentDevice.getDeviceStatus() == Device.DeviceStatus.Ready){
+            deviceStatus.setText("Ready");
+            statusMark.setImageResource(R.drawable.status_mark_ready);
+        }
+        if(parentDevice.getDeviceStatus() == Device.DeviceStatus.Linked){
+            deviceStatus.setText("Linked");
+            statusMark.setImageResource(R.drawable.status_mark_ready);
+        }
+
 
     }
 
